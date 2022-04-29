@@ -38,7 +38,7 @@ namespace WebApplication3.Controllers
                            select p;
             if (!String.IsNullOrEmpty(searchString))
             {
-                accounts = accounts.Where(p => p.UserName.Contains(searchString) || p.Address.Contains(searchString) || p.RoleNumber.Contains(searchString) || p.EmployeeNumber.Contains(searchString));
+                accounts = accounts.Where(p => p.UserName.Contains(searchString) || p.Address.Contains(searchString) || p.RoleNumber.Contains(searchString));
             }
             switch (sortOrder)
             {
